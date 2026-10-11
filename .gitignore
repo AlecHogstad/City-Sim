@@ -1,0 +1,5 @@
+node_modules/
+# Raw OpenStreetMap downloads are big; the gridded maps (data/*.json, *.png) are what to commit.
+data/*.osm.json
+scripts/fixtures/sample.osm.json
+data/sample.*

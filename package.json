@@ -1,0 +1,11 @@
+{
+  "name": "city-sim",
+  "private": true,
+  "type": "module",
+  "description": "A city redevelopment sim on real maps. First scenario: Farmington, MN.",
+  "scripts": {
+    "map:farmington": "node scripts/osm-to-grid.mjs --town Farmington --state Minnesota --out data/farmington",
+    "map:sample": "node scripts/fixtures/make-sample.mjs && node scripts/osm-to-grid.mjs --input scripts/fixtures/sample.osm.json --tile 10 --out data/sample"
+  },
+  "engines": { "node": ">=18" }
+}
